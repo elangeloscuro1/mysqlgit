@@ -1,7 +1,10 @@
 
 import java.util.Date;
 import java.util.Scanner;
+import java.net.DatagramSocket;
 import java.net.ServerSocket;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
 import java.net.Socket;
 import java.io.DataOutputStream;
 import java.io.BufferedReader;
@@ -12,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+
 public class SocketTest
 {		
 	public static void main(String[] args)
@@ -19,8 +23,8 @@ public class SocketTest
 		String hostname = "192.168.0.0";//For "localhost" ;
 		int port = 7654 ;
 		
-		client(hostname, port);
-		//server(port);
+		//client(hostname, port);
+		server(port);
 		
 	}
 	public static void client(String hostname, int port)
@@ -55,6 +59,7 @@ public class SocketTest
 	
 	public static void server(int port)
 	{
+		try{System.out.println(InetAddress.getLocalHost());}catch(Exception e){};
 		while(true)
 		{
 			Date now = new Date() ;
