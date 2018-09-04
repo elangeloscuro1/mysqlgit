@@ -1,0 +1,15 @@
+ CREATE TABLE class_data(
+    -> class_number INTEGER UNSIGNED,
+    -> course_title VARCHAR(128),
+    -> class_time VARCHAR(128),
+    -> instructor_name VARCHAR(128),
+    -> class_room VARCHAR(12),
+    -> PRIMARY KEY (class_number)) ENGINE MyISAM;
+
+CREATE TABLE student_data(
+    -> student_id INTEGER UNSIGNED,
+    -> student_name VARCHAR(128),
+    -> units_completed SMALLINT UNSIGNED,
+    -> phone_number INTEGER UNSIGNED,
+    -> gpa FLOAT,
+    -> PRIMARY KEY (student_id)) ENGINE MyISAM;

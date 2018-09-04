@@ -1,0 +1,71 @@
+student_id
+student_name
+units_completed
+phone_number
+gpa
+
+123456789
+Angel Tapia
+78
+7608728730
+3.3
+
+123423677
+Charles Long
+34
+7608237899
+4.0
+
+123434528
+John Connor
+35
+7602394989
+3.7
+
+123678670
+Jose Azpedia
+56
+7607754356
+3.2
+
+145645554
+Francisco Villa
+96
+7605676644
+2.9
+
+123567223
+Arateo Arango
+50
+7604453334
+3.8
+
+123456772
+Ronaldo Torres
+62
+7605567765
+3.7
+
+123456167
+Mark Lee
+43
+7605554323
+3.1
+
+123151721
+Anna Jones
+78
+7605678865
+3.1
+
+123423431
+Andres Garcia
+12
+7604323455
+4.0
+
+123226122
+Dyanna Vidal
+82
+7607778009
+3.5

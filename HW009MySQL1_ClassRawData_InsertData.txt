@@ -1,0 +1,11 @@
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('3084','CS 101 - Introduction to Computer Science Principles','MW 1:30 pm–3:50 pm','CHAPETON LAM','OC 4803B');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('1724','CS 107 - Introduction to Object-Oriented Programming','TTh 9 am–10:50 am','PATEL K','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2102','CS 111 - Introduction to Computer Science I: Java','TTh 3:30 pm–5:20 pm','PORTO J','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2482','CS 112 - Introduction to Computer Science II: Java','F 1:10 pm–5:10 pm','MERRILL C','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2395','CS 113 - Basic Data Structures and Algorithms','MW 11 am–12:50 pm','CHAPETON LAM','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2206','CS 138 - Programming with Python','ONLINE','LEWIS K','ONLINE');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('1726','CS 150 - C++ Programming','TTh 11 am–12:50 pm','STAFF','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2393','CS 155 - C# and the .NET Framework','2393 M 5:30 pm–9:30 pm','LEWIS K','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('2525','CS 220 - Computer Architecture and Assembly Language','MW 3:30 pm–5:20 pm','CHAPETON LAM','OC 4804');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('3052','CSIT 101 - Introduction to Computers','MW 10:30 am–11:45 am','HERRICK J','OC 4803A');
+INSERT INTO class_data(class_number, course_title, class_time, instructor_name, class_room) VALUES('1585','PHYS 151 - Principles of Physics I','MW 10:30 am–11:45 am','PETERS E','SAN 502');
