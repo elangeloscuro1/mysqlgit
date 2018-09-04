@@ -1,0 +1,81 @@
+-- MySQL dump 10.13  Distrib 5.7.21, for Linux (i686)
+--
+-- Host: localhost    Database: angel_miracosta_fall2018
+-- ------------------------------------------------------
+-- Server version	5.7.21-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `class_data`
+--
+
+DROP TABLE IF EXISTS `class_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `class_data` (
+  `class_number` int(10) unsigned NOT NULL,
+  `course_title` varchar(128) DEFAULT NULL,
+  `class_time` varchar(128) DEFAULT NULL,
+  `instructor_name` varchar(128) DEFAULT NULL,
+  `class_room` varchar(12) DEFAULT NULL,
+  PRIMARY KEY (`class_number`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `class_data`
+--
+
+LOCK TABLES `class_data` WRITE;
+/*!40000 ALTER TABLE `class_data` DISABLE KEYS */;
+INSERT INTO `class_data` VALUES (3084,'CS 101 - Introduction to Computer Science Principles','MW 1:30 pm–3:50 pm','CHAPETON LAM','OC 4803B'),(1724,'CS 107 - Introduction to Object-Oriented Programming','TTh 9 am–10:50 am','PATEL K','OC 4804'),(2102,'CS 111 - Introduction to Computer Science I: Java','TTh 3:30 pm–5:20 pm','PORTO J','OC 4804'),(2482,'CS 112 - Introduction to Computer Science II: Java','F 1:10 pm–5:10 pm','MERRILL C','OC 4804'),(2395,'CS 113 - Basic Data Structures and Algorithms','MW 11 am–12:50 pm','CHAPETON LAM','OC 4804'),(2206,'CS 138 - Programming with Python','ONLINE','LEWIS K','ONLINE'),(1726,'CS 150 - C++ Programming','TTh 11 am–12:50 pm','STAFF','OC 4804'),(2393,'CS 155 - C# and the .NET Framework','2393 M 5:30 pm–9:30 pm','LEWIS K','OC 4804'),(2525,'CS 220 - Computer Architecture and Assembly Language','MW 3:30 pm–5:20 pm','CHAPETON LAM','OC 4804'),(3052,'CSIT 101 - Introduction to Computers','MW 10:30 am–11:45 am','HERRICK J','OC 4803A'),(1585,'PHYS 151 - Principles of Physics I','MW 10:30 am–11:45 am','PETERS E','SAN 502');
+/*!40000 ALTER TABLE `class_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `student_data`
+--
+
+DROP TABLE IF EXISTS `student_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `student_data` (
+  `student_id` int(10) unsigned NOT NULL,
+  `student_name` varchar(128) DEFAULT NULL,
+  `units_completed` smallint(5) unsigned DEFAULT NULL,
+  `phone_number` varchar(12) DEFAULT NULL,
+  `gpa` float DEFAULT NULL,
+  PRIMARY KEY (`student_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `student_data`
+--
+
+LOCK TABLES `student_data` WRITE;
+/*!40000 ALTER TABLE `student_data` DISABLE KEYS */;
+INSERT INTO `student_data` VALUES (123456789,'Angel Tapia',78,'7608728730',3.3),(123423677,'Charles Long',34,'7608237899',4),(123434528,'John Connor',35,'7602394989',3.7),(123678670,'Jose Azpedia',56,'7607754356',3.2),(145645554,'Francisco Villa',96,'7605676644',2.9),(123567223,'Arateo Arango',50,'7604453334',3.8),(123456772,'Ronaldo Torres',62,'7605567765',3.7),(123456167,'Mark Lee',43,'7605554323',3.1),(123151721,'Anna Jones',78,'7605678865',3.1),(123423431,'Andres Garcia',12,'7604323455',4),(123226122,'Dyanna Vidal',82,'7607778009',3.5);
+/*!40000 ALTER TABLE `student_data` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-04-08  4:30:53
