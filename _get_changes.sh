@@ -1,2 +1,2 @@
 git pull
-read -p "Press [Enter] key to start backup..."
+read -p "Press [Enter] to continue..."
