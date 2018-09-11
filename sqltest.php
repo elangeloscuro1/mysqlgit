@@ -29,10 +29,10 @@ Example 10-6. Inserting and deleting using sqltest.php
 
     echo <<<_END
     <form action="sqltest.php" method="post"><pre>
-        Student ID	<input type="text" name="id">
-        Student Name	<input type="text" name="name">
-        Units Completed	<input type="text" name="pass">
-        <input type="submit" value="REGISTER">
+        User ID   <input type="text" name="id">
+        User Name <input type="text" name="name">
+        User Pass <input type="text" name="pass">
+                  <input type="submit" value="REGISTER">
     </pre></form>
 _END;
 
@@ -51,6 +51,7 @@ _END;
         $row = $result->fetch_array(MYSQLI_NUM);
 	echo <<<_END
 	<pre>
+	------------------------------------------------------
 	ID     $row[0]
 	Name   $row[1]
 	Pass   $row[2]
