@@ -1,0 +1,13 @@
+SHOW databases;
+USE dbtest;
+SHOW TABLES;
+DESCRIBE tbuser;
+SELECT * FROM tbuser;
+
+CREATE TABLE atable (name VARCHAR(128), userid CHAR(12)) ENGINE MyISAM;
+
+CREATE TABLE user(name VARCHAR(128) NOT NULL, id INTEGER UNSIGNED, PRIMARY KEY (id)) ENGINE MyISAM;   
+INSERT INTO user(name, id) VALUES('Angel Admin student', '0');
+
+CREATE TABLE user(name VARCHAR(128) NOT NULL, pass VARCHAR(128) NOT NULL, id INTEGER UNSIGNED, PRIMARY KEY (id)) ENGINE MyISAM;   
+INSERT INTO user(name, pass, id) VALUES('Angel Admin student', 'admin', '0');

@@ -1,0 +1,78 @@
+Pg.171:
+Pg.175:Access mysql in Linux: 
+mysql -u root –p
+mysql -u username -p
+Pg.178:Other mysql Commands:
+ALTER 		Alter a database or table
+BACKUP 		Backup a table
+\c 		Cancel input
+CREATE 		Create a database
+DELETE 		Delete a row from a table
+DESCRIBE 	Describe a table’s columns
+DROP 		Delete a database or table
+EXIT (CTRL-C) 	Exit
+GRANT 		Change user privileges
+HELP (\h, \?) 	Display help
+INSERT 		Insert data
+LOCK 		Lock table(s)
+QUIT (\q) 	Same as EXIT
+RENAME 		Rename a table
+SHOW 		List details about an object
+SOURCE 		Execute a file
+STATUS (\s) 	Display the current status
+TRUNCATE 	Empty a table
+UNLOCK 		Unlock table(s)
+UPDATE 		Update an existing record
+USE 		Use a database
+---------------EXAMPLES------------------
+GRANT ALL ON publications.* TO 'jim'@'localhost' IDENTIFIED BY 'mypasswd';
+SHOW databases;				
+CREATE DATABASE publications;			{179}	
+USE publications;
+ALTER TABLE classics ADD id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY; {pg.187}
+ALTER TABLE classics DROP id; 			{188}
+ALTER TABLE classics RENAME pre1900; 		{189}
+ALTER TABLE classics MODIFY year SMALLINT; 	{190}//changes type
+ALTER TABLE classics ADD pages SMALLINT UNSIGNED;	{190}
+ALTER TABLE classics CHANGE type category VARCHAR(16);{190}//Rename type to category
+DESCRIBE classics;					{190}//shows data type
+ALTER TABLE classics DROP pages;			{191}
+ALTER TABLE classics ADD isbn CHAR(13) PRIMARY KEY;{195}//use if no data is added else:see page
+DROP TABLE classics;					{191}//removing table
+SELECT * FROM classics;				{189}//display all(*) contents
+SELECT author,title FROM classics;			{198}
+SELECT COUNT(*) FROM classics;			{199}//counts all(*) rows
+DELETE FROM classics WHERE title='Little Dorrit';		{200}//remove entry
+SELECT author,title FROM classics ORDER BY author;	{205}
+SELECT author,title FROM classics ORDER BY title DESC;	{205}
+SELECT author,title,year FROM classics ORDER BY author,year DESC;	{206}
+SELECT author,title,year FROM classics ORDER BY author ASC,year DESC;	{206}
+PG.208-9:Joining two tables:
+USE SELECT name,author,title from customers,classics WHERE customers.isbn=classics.isbn;
+OR  SELECT name,author,title FROM customers NATURAL JOIN classics;
+OR  SELECT name,author,title FROM customers JOIN classics ON customers.isbn=classics.isbn;
+OR  SELECT name,author,title from customers AS cust, classics AS class WHERE cust.isbn=class.isbn;
+OR  SELECT author,title FROM classics WHERE
+     author LIKE "Charles%" AND author LIKE "%Darwin";
+     SELECT author,title FROM classics WHERE
+     author LIKE "%Mark Twain%" OR author LIKE "%Samuel Langhorne Clemens%";
+     SELECT author,title FROM classics WHERE
+     author LIKE "Charles%" AND author NOT LIKE "%Darwin";
+
+
+Pg.181:Creating a table:
+CREATE TABLE classics (
+author VARCHAR(128),
+title VARCHAR(128),
+type VARCHAR(16),
+year CHAR(4)) ENGINE MyISAM;
+Pg.192 (Mentioning) Searches keywords: INDEX, PRIMARY KEY, FULLTEXT
+
+
+Pg.000:Dump
+mysqldump -u USERNAME -pPASWWORD publications;			//dump to screen
+mysqldump -u USERNAME -pPASWWORD publications > dumpTest.dat	//dump to file
+Pg.000
+Pg.000
+Pg.000
+Pg.000

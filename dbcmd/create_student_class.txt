@@ -13,3 +13,5 @@ CREATE TABLE student_data(
     -> phone_number INTEGER UNSIGNED,
     -> gpa FLOAT,
     -> PRIMARY KEY (student_id)) ENGINE MyISAM;
+	
+INSERT INTO student_data(student_id, student_name, units_completed, phone_number, gpa) VALUES('123226122','Dyanna Vidal','82','7607778009','3.5');
