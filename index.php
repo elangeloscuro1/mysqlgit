@@ -8,7 +8,7 @@
 
 
 <?php
-    $conn = new mysqli("localhost", "root", "", "user");
+    $conn = new mysqli("localhost", "root", "", "test");
     if ($conn->connect_error) die($conn->connect_error);
 
     if (isset($_POST['delete']) && isset($_POST['id']))
