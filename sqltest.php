@@ -55,11 +55,11 @@ _END;
 	ID     $row[0]
 	Name   $row[1]
 	Pass   $row[2]
-	</pre>
 	<form action="sqltest.php" method="post">
 	<input type="hidden" name="delete" value="yes">
 	<input type="hidden" name="id" value="$row[0]">
-	<input type="submit" value="DELETE RECORD"></form>
+	<input type="submit" value="DELETE RECORD">
+	</pre></form>
 _END;
 	}
 
