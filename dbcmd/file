@@ -11,3 +11,7 @@ INSERT INTO user(name, id) VALUES('Angel Admin student', '0');
 
 CREATE TABLE user(name VARCHAR(128) NOT NULL, pass VARCHAR(128) NOT NULL, id INTEGER UNSIGNED, PRIMARY KEY (id)) ENGINE MyISAM;   
 INSERT INTO user(name, pass, id) VALUES('Angel Admin student', 'admin', '0');
+
+CREATE TABLE user(name VARCHAR(128) NOT NULL, pass VARCHAR(128) NOT NULL, id INTEGER UNSIGNED, PRIMARY KEY (id)) ENGINE MyISAM;   
+INSERT INTO user(name, pass, id) VALUES('Angel Admin student', 'admin', '0');
+

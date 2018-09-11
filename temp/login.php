@@ -1,6 +1,6 @@
 <?php // login.php
 $db_hostname = 'localhost';
-$db_database = 'test';//'publications';
+$db_database = 'angel_miracosta_fall2018';//'publications';
 $db_username = 'root';//'jim';
 $db_password = '';//'mypasswd';
 ?>
