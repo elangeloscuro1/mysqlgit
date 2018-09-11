@@ -5,15 +5,15 @@
 
    <body>
      <h1> It Works!!!</h1>  
-   </body>
-</html>
 
-Example 10-6. Inserting and deleting using sqltest.php
+
 <?php
     $conn = new mysqli("localhost", "root", "", "user");
+    $conn = new mysqli($db_hostname, $db_username, $db_password, $db_database);
     if ($conn->connect_error) die($conn->connect_error);
 
-    if (isset($_POST['delete']) && isset($_POST['id'])
+    if (isset($_POST['delete']) && isset($_POST['id']))
+    {
         $id = get_post($conn, 'id');
         $query = "DELETE FROM user WHERE id='$id'";
         $result = $conn->query($query);
@@ -61,7 +61,7 @@ _END;
 	<pre>
 	------------------------------------------------------
 	ID     $row[0]
-	Name   $row[
+	Name   $row[1]
 	Pass   $row[2]
 	<form action="sqltest.php" method="post">
 	<input type="hidden" name="delete" value="yes">
@@ -79,3 +79,6 @@ _END;
         return $conn->real_escape_string($_POST[$var]);
     }
 ?>
+
+   </body>
+</html>

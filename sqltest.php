@@ -70,6 +70,4 @@ _END;
     {
         return $conn->real_escape_string($_POST[$var]);
     }
-
-
 ?>
