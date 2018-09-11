@@ -35,7 +35,7 @@
     }
 
     echo <<<_END
-    <form action="sqltest.php" method="post"><pre>
+    <form action="index.php" method="post"><pre>
         User ID   <input type="text" name="id">
         User Name <input type="text" name="name">
         User Pass <input type="text" name="pass">
@@ -62,7 +62,7 @@ _END;
 	ID     $row[0]
 	Name   $row[1]
 	Pass   $row[2]
-	<form action="sqltest.php" method="post">
+	<form action="index.php" method="post">
 	<input type="hidden" name="delete" value="yes">
 	<input type="hidden" name="id" value="$row[0]">
 	<input type="submit" value="DELETE RECORD">
