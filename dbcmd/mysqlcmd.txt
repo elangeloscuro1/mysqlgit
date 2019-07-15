@@ -25,6 +25,10 @@ UNLOCK 		Unlock table(s)
 UPDATE 		Update an existing record
 USE 		Use a database
 ---------------EXAMPLES------------------
+CREATE USER 'phpmyadmin'@'localhost' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+-----------------------------------------
 GRANT ALL ON publications.* TO 'jim'@'localhost' IDENTIFIED BY 'mypasswd';
 SHOW databases;				
 CREATE DATABASE publications;			{179}	

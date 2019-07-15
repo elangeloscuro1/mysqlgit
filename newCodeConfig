@@ -1,0 +1,8 @@
+sudo mysql -u root
+sudo nano /etc/apache2/apache2.conf
+	[100/100]: sudo nano /etc/apache2/apache2.conf
+sudo nano /etc/phpmyadmin/config-db.php
+sudo nano /etc/phpmyadmin/config.inc.php
+	[ 50/100]: $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
+SELECT User, Host, Password FROM mysql.user;
+

@@ -1,7 +1,7 @@
 <?php // login.php
 $db_hostname = 'localhost';
-$db_database = 'angel_miracosta_fall2018';//'publications';
-$db_username = 'root';//'jim';
-$db_password = '';//'mypasswd';
+$db_database = 'database_name';//'publications';
+$db_username = 'user_name';//'jim';
+$db_password = 'user_pass';//'mypasswd';
 ?>
 
